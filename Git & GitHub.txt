@@ -1,0 +1,215 @@
+Git.....
+
+Git is a vrsion control system
+Git elps to keep track of code changes
+Git used to collaborate on code
+
+GitHub........
+
+GitHub is web-based git repository hosting service
+
+-----------------------------------------------------------------------------------
+
+create GitHub account
+
+download git in browser ----> to check git downloaded successfully try this
+
+     > cmd --> git  
+
+to configure ur account:
+
+     >cmd -->git config --global user.name "your-user-name" - enter
+     >cmd -->git config --global user.email "your@email.com" - enter
+
+-----------------------------------------------------------------------------------------------------
+TO ADD OUR Existing REPOSITORY IN NEW FOLDER..........
+
+create new folder on file manager/desktop --> open vscode --> select that folder --> open terminal -->type: git clone
+then
+open ur repo --> click the green color code --> copy https orgin link --> paste that link in terminal after git clone.
+
+TO GO INSIDE THE FOLDER DIRECTORY................
+
+>cmd --> cd (type repo name)                             [cd means change directory]
+
+CREATE NEW FILE IN VS CODE...............
+
+select folder --> click new file symbol on above
+
+TO CHECK THAT FOLDER STATUS..........................
+
+>cmd --> git status 
+U means untracked file===red error
+
+TO ADD NEW FILE TO THAT FOLDER...................
+
+>cmd --> git add [file name] U...changed as an...A(add)===green error===sucessfully addedd
+
+TO ADD THIS FILE TO LOCAL GIT........................
+
+>cmd --> git commit -m "text2.txt file addedd"
+
+TO ADD THAT FILE LOCAL GIT INTO GITHUB REPO........................
+
+>cmd -->git push orgin main 
+
+what i do before ? in simple word...... INSERT NEW FILE->ADD->COMMIT->PUSH 
+
+TRY TO DELETE ONE FILE..................................
+
+right click->delete...TO CHECK GIT STATUS -> git status->and do same procedure in terminal[add-commit-push-refresh]
+
+TO CREATE NEW FILES IN REPO..........................
+
+click add new file in repo->name ur file->write something->commit changes.
+
+TO GET THIS FILE IN VSCODE..............................
+
+>cmd->git pull--->if u change anything in repository just give "git pull"in vscode then it will refelects the changes.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+NOW,CREATE NEW REPOSITORY IN FOLDER AFTER ADD INTO GITHUB
+
+cerate a folder inside the existing folder->goto vscode->add a file init.
+
+NOW THE PATH OF THE FILE IS BEFORE ONES.SO, NOW WE WANT TO CHANGE IT IN CURRENT FOLDER PATH.
+THEN ONLY WE CAN MADE ANY CHANGES IN THAT FORLDER.CMD FOR GO back to main folder.
+>cmd-> cd ..
+
+TO GO CURRENT FOLDER...................
+>cmd->cd (folder repo name)
+
+NOW, WANT TO CHANGE THE FOLDER INTO GIT,BECAUSE ITS NOT CREATED IN GITHUB SO, THERE IS NO DEFAULT GIT.
+CMD TO INJECT GIT INIT.
+>cmd->git init
+
+NOW THE FILE IS IN UNTRACKED...........
+>cmd->git status->untracked
+
+IF WE HAVE MANY FILES CREATED INSIDE THIS MEANS DONT WANT TO ADD EACH TIME FOR EACH ONE .JUST GIVE [GIT ADD DOT] IT WILL AUTOMATICALLY ADD ALL FILES.
+>cmd->git add .
+>cmd->git commit -m "created file names"   [example:git commit -m "added index.html and style.css"]
+
+NOW,WE CANT PUSH THE FILE DIRECTLY BECOUSE WE DONT HAVE ANY REPO IN GITHUB.
+SO,WANT TO CREATE NEW REPO IN GITHUB.
+
+CREATE A NEW REPOSITORY WITH SAME FOLDER NAME
+
+NOW, WANT TO ADD/COMBINE BOTH REPOSITORY
+
+>cmd->git remote add origin (past origin link)
+
+CHECK BRANCH...........
+>cmd->git branch
+
+TO CHANGE BRACH NAME..............
+>cmd->git branch -m "(name u want)"
+
+>cmd->git push origin main->refresh edge.
+
+--------------------------------------------------------------------------------------------------------------------------------
+BRANCH CONCEPTS...................................
+
+TO CHECK WHAT ARE THE BRANCHES AVAILABLE IN MY REPO............
+>cmd->git branch -a
+
+CREATE NEW BRANCH IN REPOSITORY EDGE
+
+TO CHANGE BRANCH............
+>cmd->git checkout (branch name)
+
+FOLLOW SAME Procedure-->add-commit-push
+
+IF WE DO ANY FILE CRATION OR EDIT IT WILL SHOW ONLY ON THAT BRANCH FILES..
+
+TO CHECK DIFFERENCE BETWEN THE MAIN BRANCH AND ANOTHER BRANCH............
+>cmd->git diff (branchname)
+
+TO MERGE CURRENT BRANCH TO ANOTHER BRANCH.............
+>cmd-->git merge (branch name).
+
+AFTER MERGE THE BRACH DO PUSH...............
+>cmd--> git push origin main
+
+TO CLEAR ALL THE CMD'S U GIVE BEFORE...............
+>cmd-->clear
+
+TO CREATE NEW BRANCH IN VSCODE..........
+>cmd->git branch (branch name)
+
+---------------------------------------------------------------------------------------------------
+PULL REQUEST..................................................
+
+THEN,CHECK THE BRANCH AND CHECKOUT WHICH BRANCH YOU WANT...........
+>cmd->git checkout (branch name)
+
+IF U WORKING ON HIGH LEVEL PROJECT ,U DONT HAVE ACCESS TO MAIN BRANCH SO,U CANT MERGE BRANCHES DIRECTLY.
+ON THIS TIME U WANT TO GIVE PULL REQUEST. LIKE WANT TO SAY...I MADE CHANGES IN MY BRANCH CHECK THAT AND IF ITS OKAY MEANS ADD IT IN MAIN BRANCH.
+
+Goto github->click pull request->new pullrequest
+
+change base and compare branch names u want->create pull request->give some description about ur branch->create pull request->successfully created.
+
+this request notification has shown ur boss->view and check->after checking if u want means->click merge pull request->conform merging.
+
+now the branch merged successfully.
+
+pull is a combination of 2 different commands:...............................
+	fetch
+	merge
+Git Fetch
+fetch gets all the change history of a tracked branch/repo.
+
+Git Merge
+merge combines the current branch, with a specified branch.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
