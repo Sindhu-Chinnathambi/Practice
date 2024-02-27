@@ -1,0 +1,165 @@
+core java..........
+
+https://www.javatpoint.com/java-oops-concepts
+https://www.w3schools.com/java/java_class_methods.asp
+https://www.javaguides.net/2019/08/oops-concepts-in-java-with-realtime-examples.html#:~:text=outside%20the%20wrapper.-,Real%2Dworld%20examples,data%20members%20are%20private%20here.
+-------------------------------------------------------------------------------------------------------
+The core OOPs concepts:
+
+1.Object
+2.Class
+3.Abstraction
+4.Encapsulation
+5.Inheritance
+6.Polymorphism
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+1. Object:                                                              2.Class  
+
+  The object is an instance of a class.                                  Collection of objects is called class. 
+  An object is a real-world entity.                                      It is a logical entity.
+  An object is a runtime entity.                                         A class can also be defined as a blueprint from which you 
+  The object is an entity that has a state and behavior.                 can create an individual object.Class doesn't consume any space.       
+                                                                                                                                            
+ANOTHER EXAMPLE:
+
+Class............objects__________________Class............objects
+
+Fruit              Apple                   Car              Volvo     
+                   Banana                                   Audi
+                   Mango                                    Toyota
+
+
+OBJECT Example:                                                         CLASS Example:
+
+Create an object called "myObj" and print the value of x:               Create a class named "Main" with a variable x:
+
+public class Main {                                                     public class Main {
+  int x = 5;                                                                    int x = 5;
+                                                                                 }
+  public static void main(String[] args) {                               
+    Main myObj = new Main();                                           
+    System.out.println(myObj.x);
+  }
+}       
+----------------------------------------------------------------------------------------------------------------------------------------------------
+3.Abstraction
+
+Hiding internal details and showing functionality is known as abstraction. 
+In Java, we use abstract class and interface to achieve abstraction.
+
+For example: car, phone call, we don't know the internal processing.
+
+Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+
+Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
+
+Example:
+
+abstract class Animal {
+  public abstract void animalSound();
+  public void sleep() {
+    System.out.println("Zzz");
+  }
+}
+
+From the example above, it is not possible to create an object of the Animal class:
+
+Animal myObj = new Animal(); // will generate an error
+
+ANOTHER EXAMPLE:
+
+// Abstract class
+abstract class Animal {
+  // Abstract method (does not have a body)
+  public abstract void animalSound();
+  // Regular method
+  public void sleep() {
+    System.out.println("Zzz");
+  }
+}
+
+// Subclass (inherit from Animal)
+class Pig extends Animal {
+  public void animalSound() {
+    // The body of animalSound() is provided here
+    System.out.println("The pig says: wee wee");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Pig myPig = new Pig(); // Create a Pig object
+    myPig.animalSound();
+    myPig.sleep();
+  }
+}
+-----------------------------------------------------------------------------------------------------------------
+4.Encapsulation:
+
+Encapsulation is a process of wrapping or Binding all data and methods in a single unit is called encapsulation.
+
+EXAMPLE: Tablet capsule.
+
+declare class variables/attributes as private
+provide public get and set methods to access and update the value of a private variable
+
+Example:
+
+public class Main {
+  public static void main(String[] args) {
+    Person myObj = new Person();
+    myObj.setName("John"); // Set the value of the name variable to "John"
+    System.out.println(myObj.getName());
+  }
+}
+
+// Outputs "John"
+-------------------------------------------------------------------------------------------------------------------------
+5.Inheritance:
+
+Inheritance is a process of obtaining the data members and methods from one class to another class.
+When one object acquires all the properties and behaviors of a parent object, it is known as inheritance. 
+It provides code reusability. It is used to achieve runtime polymorphism.
+
+Inheritance - IS-A relationship between a superclass and its subclasses.
+
+Super Class: The class whose features are inherited is known as a superclass (or a base class or a parent class).
+Sub Class: The class that inherits the other class is known as a subclass(or a derived class, extended class, or child class). 
+The subclass can add its own fields and methods in addition to the superclass fields and methods.
+
+Example:
+we have 3 dogs, it has same name,same color,same size but its a different dog.
+
+class Vehicle {
+  protected String brand = "Ford";        // Vehicle attribute
+  public void honk() {                    // Vehicle method
+    System.out.println("Tuut, tuut!");
+  }
+}
+
+class Car extends Vehicle {
+  private String modelName = "Mustang";    // Car attribute
+  public static void main(String[] args) {
+
+    // Create a myCar object
+    Car myCar = new Car();
+
+    // Call the honk() method (from the Vehicle class) on the myCar object
+    myCar.honk();
+
+    // Display the value of the brand attribute (from the Vehicle class) and the value of the modelName from the Car class
+    System.out.println(myCar.brand + " " + myCar.modelName);
+  }
+}
+-----------------------------------------------------------------------------------------------------------------------------------
+6.Polymorphism
+
+The process of representing one form in multiple forms is known as Polymorphism."MANY FORMS"
+
+EXAMPLE: ME: i am a student,daughter,collic,frnd,sister im a single person but im playing different roles.
+
+
+
+
+
