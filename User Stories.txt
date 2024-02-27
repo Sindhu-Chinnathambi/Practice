@@ -1,0 +1,136 @@
+User Stories...................
+
+>>>Its about Client Requirements given by customer
+user story is a short, simple description.
+User stories are designed to strongly shift the focus from writing about features to discussing them.
+In fact, these discussions are more important than whatever text is written.
+
+What Makes a Good User Story?................................
+
+3C's of a user story:
+          card
+          conversation
+          confirmation
+
+Card: Written description of the story, used for planning and as a reminder.
+Conversation: where a detailed description of the user story is discussed. The written Card is modified to reflect the current 
+              shared understanding of this conversation.
+Confirmation: Confirmation represents the acceptance criteria, which is how the product owner will confirm that the story has been executed
+              to their level of satisfaction.Confirmation represents the conditions of satisfaction.
+
+How to write a user story................
+
+Writing good user stories in Scrum requires an understanding of the basic user story template, 
+a focus on the user or customer, and a clear picture of the desired functionality.
+
+User Story Template....................
+
+When writing a user story, remember that user stories follow a standard template.
+
+As a < type of user >, I want < some goal > so that < some reason >.
+                or
+“As a [persona], I [want to], [so that].”
+
+For example, user stories might look like....................................
+
+As sindhu, I want to invite my friends, so we can enjoy this service together.  or
+As Sascha, I want to organize my work, so I can feel more in control. or
+As a manager, I want to understand my Team progress, so I can better report our sucess and failures. 
+
+Who writes user stories?........................
+anyone can write use story.
+1. Developer.
+2. Team member.
+3. product owner.->ownership will be with him
+4. Some times ->scrum master.
+Acceptence criteria come up with the team, product owner decide to priority or depriortise. So, acceptence criteria is with product owner.
+
+
+STRUCTURE:
+
+              Initiative                           Intiative:are collections of epic that drive toward a common goal. EX:Scool management system [title of the project]
+                  |
+      ___________________________
+      |                          |
+   Epics                       Epics               Epics:are large bodies of work that can be broken down into several smaller task. EX: loginpg,attendance,fees[modules]
+     |                           |                                
+____________               ____________
+|           |              |           |           user story:are short requirements or requests written from the prespective of end user. EX:breif details about the modules.
+user       user          user        user                  
+story      story        story        story
+  
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ACCEPTANCE CRITERIA
+
+	In Agile, acceptance criteria refer to a set of predefined requirements that must be met to mark a user story complete. 
+Acceptance criteria are also sometimes called the “definition of done” because they determine the scope and requirements 
+that must be executed by developers to consider the user story finished.
+
+How to write acceptance criteria?
+
+	There is a process in software engineering known as behavior-driven development. 
+It describes a process that encourages communication and collaboration between business participants 
+in a software project and the development team.
+
+Two Common Formats: Scenario-oriented format
+                    Rule oriented format
+					
+Scenario-oriented format:
+
+	The scenario-oriented AC approach is inherited from behavior-driven development and is an excellent way 
+to set guidelines on when developers should begin and end testing a certain feature. 
+
+Scenario – In the first statement, you’ll have to write the name of the behavior that you’re describing.
+Given – The second statement refers to the beginning stage of the scenario.
+When – The third statement involves a particular action that you want the user to make.
+Then – This is used to describe the outcome of the third statement.
+And – You can use “And” to continue any statement except “Scenario.”
+
+Example: Banking Application
+
+User story: As a credit cardholder, I want to receive a notification for remaining balance 
+            for every transaction so that i could not go to netbanking.
+			
+Scenario: Notification for the balance
+Given: The user has opened a bank account
+And: The user has received a credit card
+When: The user has made a transaction
+Then: The system notifies the user of their balance
+
+Rule oriented format:
+The rule-oriented format is basically like writing a simple bullet list with all the features you want your product to have.
+By doing this, you’ll ensure that the development team understands your vision clearly.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+INVEST-ing in User Stories.............................
+
+  Widely accepted around the world, the acronym INVEST represents criteria or checklist that can help assess the quality of a user story. 
+
+Independent:
+    The user story must be self-contained to ensure it can be released without relying on another
+
+Negotiable:
+     The user story mustn’t be written like a contract. Only understand the essence of the user’s requirement, opening space for conversations
+
+Valuable:
+     Value is delivered to the end-user
+
+Estimable:
+     The user story should be able to estimated to prioritize them and to fit them into sprints
+
+Small:
+     The user story must be in a way that can be completed in a span 3-4 days
+
+Testable:
+     A pre-written criteria must confirm the user story
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
